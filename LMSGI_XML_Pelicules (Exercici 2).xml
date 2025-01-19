@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cataleg SYSTEM "LSMGI_Esquema DTD (Exercici 2).dtd">
+<cataleg>
+    <llista_actors>
+        <actor id="actor_01">
+            <nom>Leonardo DiCaprio</nom>
+            <edat>48</edat>
+        </actor>
+        <actor id="actor_02">
+            <nom>Kate Winslet</nom>
+        </actor>
+        <actor id="actor_03">
+            <nom>Tom Hanks</nom>
+            <edat>67</edat>
+        </actor>
+    </llista_actors>
+
+    <llista_pelicules>
+        <pelicula id="pelicula_01">
+            <titol idioma="EN">Titanic</titol>
+            <director>James Cameron</director>
+            <any>1997</any>
+            <actors>
+                <actor_ref ref="actor_01"/>
+                <actor_ref ref="actor_02"/>
+            </actors>
+        </pelicula>
+        <pelicula id="pelicula_02">
+            <titol idioma="EN">Forrest Gump</titol>
+            <director>Robert Zemeckis</director>
+            <any>1994</any>
+            <actors>
+                <actor_ref ref="actor_03"/>
+            </actors>
+        </pelicula>
+    </llista_pelicules>
+
+    <llista_recomenacions_pelicules>
+        <recomanacio ref="pelicula_01"/>
+        <recomanacio ref="pelicula_02"/>
+    </llista_recomenacions_pelicules>
+</cataleg>
