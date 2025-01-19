@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE cataleg SYSTEM "LSMGI_Esquema DTD (Exercici 2).dtd">
+<!DOCTYPE cataleg SYSTEM "LSMGI_Esquema_DTD_Exercici_2.dtd">
+
 <cataleg>
+
     <llista_actors>
         <actor id="actor_01">
             <nom>Leonardo DiCaprio</nom>

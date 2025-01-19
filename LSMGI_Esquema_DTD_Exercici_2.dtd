@@ -3,11 +3,11 @@
 <!-- llista d'actors -->
 <!ELEMENT llista_actors (actor+)>
 <!ELEMENT actor (nom, edat?)>
+<!ATTLIST actor id ID #REQUIRED>
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT edat (#PCDATA)>
-<!ELEMENT actor id ID #REQUIRED>
 
-<!-- llista de pel·lícula -->
+<!-- llista de pel·lícules -->
 <!ELEMENT llista_pelicules (pelicula+)>
 <!ELEMENT pelicula (titol, director, any, actors)>
 <!ATTLIST pelicula id ID #REQUIRED>
@@ -18,10 +18,10 @@
 <!ELEMENT actors (actor_ref+)>
 <!ELEMENT actor_ref EMPTY>
 <!-- Referència de les IDs dels actors -->
-<!ATTLIST acto_ref ref IDREF #REQUIRED>
+<!ATTLIST actor_ref ref IDREF #REQUIRED>
 
 <!-- llista de recomenacions de pel·lícules -->
-<!ELEMENT llista_recomenacions_pelicules (recomancio*)>
+<!ELEMENT llista_recomenacions_pelicules (recomanacio*)>
 <!ELEMENT recomanacio EMPTY>
 <!-- Referència de les IDs de les pel·lícules -->
 <!ATTLIST recomanacio ref IDREF #REQUIRED>
